@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe"
+    app:leftEdgeSwipeOffset="0dp"
+    app:rightEdgeSwipeOffset="0dp">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivTrash"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_delete"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginBottom="9dp"
+        android:layout_marginTop="10dp"
+        android:weightSum="10"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tv1"
+            android:layout_weight="3"
+            android:text="Hi Q.Thjen"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tv2"
+            android:layout_weight="3"
+            android:text="Hi"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tv3"
+            android:layout_weight="3"
+            android:text="Q.Thjen"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>
